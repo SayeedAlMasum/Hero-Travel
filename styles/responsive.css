@@ -1,0 +1,23 @@
+@media screen and(max-width:576px) {
+    header,main,footer,body,div{
+        flex-direction:column;
+    }
+    .banner-inputs{
+        flex-direction:row;
+    }
+    .buttons{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    } 
+    
+    .best-price-div{
+        border-radius: 5px;
+        border: 1px solid rgba(251, 181, 99, 0.20);
+        background: rgba(251, 181, 99, 0.05);    
+        width: 50%; 
+        padding: 2%;      
+    }
+    }
+    
+    

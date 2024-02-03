@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,40 +16,52 @@
 </head>
 <body>
  
-    <nav>
-        <div class="hero-travel">
-            <div class="hero-travel-icon">
-            <img src="Images/Group 40071 (2).png" alt="" class="hero-icon">
-        </div>
-         <div class="hero-travel-title">
-            <h1>Hero <span class="span">Travel</span></h1>
-        </div>
-    </div>
-         <ul>
-             <li><a href=""><span class="span">Home</span></a></li>
-             <li><a href="">Testimonial</a></li>
-             <li><a href="">Testimonial</a></li> 
-             <li><a href="">Blog</a></li>
-             <li><a href="">Contact</a></li>
-         </ul>
+    <nav class="nav-section">
+        <div class="nav-container">
+            <img src="Images/Group 40071 (2).png" alt="" class="nav-container-img">
+            <h2>Hero <span class="span">Travel</span></h2>
+        </div>   
+         <div class="items-container">
+          <a href=""><span class="span">Home</span></a>
+          <a href="">Package</a>
+          <a href="">Testimonial</a> 
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+         </div>
+         <div class="three-lines">
+          <img src="Images/" alt="">
+         </div>
      </nav>
      <header>
-        <h1 class="explore-title">Explore Your Travel</h1>
-        <p class="explore-para">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus </p><br>
-        <div class="checkbox-div">
-            <button class="buttons">
-             Where go
-            </button>
-            <button class="buttons">
-             When
-            </button>
-            <button class="buttons">
-             Select Type
-            </button>
-            <button class="buttons">
-             Find Now
-            </button>
-        </div>
+       <section class="banner-section">
+       <div class="banner-heading"> <h1>Explore Your Travel</h1></div><br><br>
+        <div class="banner-para"><p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus </p></div><br><br><br>
+        <div class="banner-inputs">
+          <div>
+          <input type="text" name="" id="" class="input1" placeholder="where go">
+         </div>
+      <div>
+        <select class="input2">
+          <option value="0">when</option>
+          <option value="1" >Saturday</option>
+          <option value="2" >Sunday</option>
+          <option value="3" >Monday</option>
+          <option value="4" >Tuesday</option>
+          <option value="5" >Wednesday</option>
+          <option value="6" >Thursday</option>
+          <option value="7" >Friday</option>
+        </select>
+      </div>
+     <div>
+      <select class="input3">
+        <option value="0">Select Type</option>
+      </select>
+     </div>
+      <div>
+        <button class="btn-find-now">Find Now</button>
+      </div>
+    </div>
+      </section>
    </header><br><br><br><br><br>
    <main>
     <div class="popular-tour-div">
@@ -57,7 +70,7 @@
               <p class="popular-para">
                 Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
               </p>
-              <ul class="popular-para">
+              <ul type="disc" class="popular-para">
                 <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li><br>
                 <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea p orta lacus. Lectus suspendisse nullam.</li><br>
                 <li> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li><br>
@@ -65,32 +78,48 @@
               <p class="popular-para">
                 Amet consectetur. Vulputate commodo felis molestie risus 
 ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. 
-              </p>
-              <button class="read-more">
-                Read More
-              </button>
+              </p><br><br>
+              <div>
+                <button class="btn-read-more">Read More</button>
+              </div>
             </div><br><br><br><br>
-            <div class="img-popular-div">
+            <div class="img-popular-tour">
               <img src="Images/Rectangle 4.png" alt="" class="img-popular">
             </div>
          </div><br><br><br><br><br><br>
-        <div class="destination-choosing-div">
-            <h2 class="popular-title">Choose Your Destination</h2>
-            <p class="popular-para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p><br><br><br>
+        <div class="destination">
+            <h2>Choose Your Destination</h2>
+            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p><br><br><br>
         </div>
-        <div class="img-two-div">
-            <img src="Images/Rectangle 5.png" alt="" class="img-two">
-            <img src="Images/Rectangle 8.png" alt="" class="img-two">
-        </div><br>
-        <div class="img-three-div">
-            <img src="Images/Rectangle 6.png" alt="" class="img-three">
-            <img src="Images/Rectangle 7.png" alt="" class="img-three">
-            <img src="Images/Rectangle 9.png" alt="" class="img-three">
-        </div><br>
-        <div class="img-two-last-div">
-            <img src="Images/Rectangle 11.png" alt="" class="img-two-last">
-            <img src="Images/Rectangle 10.png" alt="" class="img-two-last">
-        </div><br><br><br><br><br>
+        <div class="img-destination">
+           <div class="destination-grp1">
+            <img src="Images/Rectangle 5.png" alt="" class="Maldives">
+            <img src="Images/Rectangle 8.png" alt="" class="Indonesia">
+           </div>
+        <div class="image-name">
+          <p class="name1">Maldives</p>
+          <p class="name2">Indonasia</p>
+      </div>
+        <div class="destination-grp2">
+            <img src="Images/Rectangle 6.png" alt="" class="Srilanka">
+            <img src="Images/Rectangle 7.png" alt="" class="North-America">
+            <img src="Images/Rectangle 9.png" alt="" class="Kashmir">
+        </div>
+        <div class="image-name2">
+          <p class="name3">Srilanka</p>
+          <p class="name4">North-America</p>
+          <p class="name5">Kashmir</p>
+      </div>
+        <div class="destination-grp3">
+            <img src="Images/Rectangle 11.png" alt="" class="Bangladesh">
+            <img src="Images/Rectangle 10.png" alt="" class="Bandarban">
+        </div>
+        <div class="image-name2">
+          <p class="name6">Bangladesh</p>
+          <p class="name7">Bandarban</p>
+      </div>
+    </div>
+        <br><br><br><br><br>
         <div class="why-choosing-div">
             <h2 class="popular-title">Why Choose Us</h2>
         <p class="popular-para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
