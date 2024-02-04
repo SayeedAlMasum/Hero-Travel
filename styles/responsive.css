@@ -1,7 +1,6 @@
-@media screen and(max-width:600px) {
+@media screen and(max-width:576px) {
     .nav-section{
-        max-width: 1250px;
-        margin: 0 auto;
+     
     }
     .items-container{
        display: none;
