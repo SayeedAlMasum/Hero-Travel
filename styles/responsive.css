@@ -1,6 +1,24 @@
-@media screen and(max-width:576px) {
-    header,main,footer,body,div{
-        flex-direction:column;
+@media screen and(max-width:600px) {
+    .nav-section{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    .items-container{
+       display: none;
+
+    }
+    .nav-container h2 {
+        font-size: 21.543px;
+        font-weight: 800;
+    }
+
+    .three-lines {
+        position: relative;
+        top: 90px;
+        left: 135px;
+        background: url('../Images/Frame.jpg');
+        background-repeat: no-repeat;       
+         
     }
     .banner-inputs{
         flex-direction:row;
@@ -8,7 +26,6 @@
     .buttons{
         height: 100%;
         width: 100%;
-        flex-direction: column;
     } 
     
     .best-price-div{
@@ -17,6 +34,15 @@
         background: rgba(251, 181, 99, 0.05);    
         width: 50%; 
         padding: 2%;      
+    }
+    .popular-tour-div{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:3%;
+    }
+    .popular-text-div{
+        line-height: normal;
+        width: 100%;
     }
     }
     
