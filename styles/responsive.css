@@ -1,48 +1,59 @@
-@media(max-width:576px) {
-    .nav-section{
-     
+@media screen and (max-width: 576px) {
+    .container {
+        width: 300px;
+        margin: 0 auto;
     }
-    .items-container{
-       display: none;
 
-    }
     .nav-container h2 {
-        font-size: 21.543px;
+        font-size: 16.543px;
         font-weight: 800;
     }
 
+    .nav-container img {}
+
+    .items-container {
+        display: none;
+    }
+
     .three-lines {
+        display: block;
         position: relative;
         top: 90px;
         left: 135px;
         background: url('../Images/Frame.jpg');
-        background-repeat: no-repeat;       
-         
+        background-repeat: no-repeat;
+
     }
-    .banner-inputs{
-        flex-direction:row;
+
+
+    header {}
+
+    .banner-inputs {
+        flex-direction: row;
     }
-    .buttons{
+
+    .buttons {
         height: 100%;
         width: 100%;
-    } 
-    
-    .best-price-div{
+    }
+
+    .best-price-div {
+        
         border-radius: 5px;
         border: 1px solid rgba(251, 181, 99, 0.20);
-        background: rgba(251, 181, 99, 0.05);    
-        width: 50%; 
-        padding: 2%;      
+        background: rgba(251, 181, 99, 0.05);
+        width: 50%;
+        padding: 2%;
     }
-    .popular-tour-div{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:3%;
+
+    .popular-tour-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
     }
-    .popular-text-div{
+
+    .popular-text-div {
         line-height: normal;
         width: 100%;
     }
-    }
-    
-    
+}
